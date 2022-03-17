@@ -9,11 +9,18 @@ class Number
       return 0
       end
 
+      #Creating array from 0 to requested number
+       arr = [*1..n]
 
-       arr = [*0..n]
-       arr.select { |x| x >= 2}.each do
-        p n / 5
+       #i would like to:
+       #- divide the number by itself and every number below it to check if it's a prime number 
+    
+       #>>NOT WORKING<<
+       arr.select { |x| x >= 2}.each.to_i do
+        n / [*n..1]
 
-      end
+        #dopo averlo diviso decrementarlo di 1 e ricominciare da capo
+        n -=1
+       end
   end
 end
