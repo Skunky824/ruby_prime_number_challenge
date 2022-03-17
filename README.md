@@ -1,1 +1,0 @@
-# ruby_prime_number_challenge
